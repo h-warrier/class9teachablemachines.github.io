@@ -20,7 +20,7 @@
   <meta property="og:description" content="I have used again the magic of Google to train a visual machine learning model and turn everything into a classic game for my kids: Rock Paper Scissors."/>
   <meta property="og:image" content="https://tailwindcss.com/_next/static/media/twitter-large-card.2e0e43628f69eba639f387da72chttps://raw.githubusercontent.com/seftimie/Rock-Paper-Scissors-with-Google-Teachable-Machine/main/screens/6.jpg"/>
 
-  <title>Rock Paper Scissors with Google Teachable Machine</title>
+  <title>Rock Paper Scissors</title>
 
 
 <!-- tailwind css -->
@@ -46,9 +46,9 @@
 
               <!-- start welcome message -->
               <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-                Time to play
+                Time to play!
                 <br>
-                <span class="text-indigo-600">Rock Paper Scissors?</span>
+                <span class="text-indigo-600">Rock Paper Scissors</span>
                 <br/>
                 <p class="text-base font-light text-gray-600">by Shree Hari Warrier 9A <span class="text-indigo-600 font-extrabold"></p>
               </h2>
@@ -91,7 +91,7 @@
 
               <!-- start human box --->
               <div class="items-center flex-1 text-gray-100 text-center bg-gray-900 px-4 py-2 m-2 text-base">
-                  <h4 class="text-lg leading-6 font-medium text-gray-200">👤 Human score: {{ humanScore }} pts </h4>
+                  <h4 class="text-lg leading-6 font-medium text-gray-200">👤 Human: {{ humanScore }} pts </h4>
 
                   <h1 class="text-6xl mt-20" v-if="humanChoose === 0">👊</h1>
                   <h1 class="text-6xl mt-20" v-else-if="humanChoose === 1">🤚</h1>
@@ -108,7 +108,7 @@
 
               <!-- start robot box --->
               <div class="items-center flex-1 text-gray-100 text-center bg-gray-900 px-4 py-2 m-2 text-base">
-                  <h4 class="text-lg leading-6 font-medium text-gray-200">🤖 Robot score: {{ robotScore }} pts </h4>
+                  <h4 class="text-lg leading-6 font-medium text-gray-200">🤖 AI: {{ robotScore }} pts </h4>
 
                   <h1 class="text-6xl mt-20" v-if="robotChoose === 0">👊</h1>
                   <h1 class="text-6xl mt-20" v-else-if="robotChoose === 1">🤚</h1>
@@ -117,7 +117,7 @@
                   <h1 class="text-6xl mt-20" v-else></h1>
 
                   <p class="text-center mt-20">
-                      <img class="text-center inline" src="img/robot.svg" alt="Laracasts Sign Up Mascot">
+                      <img class="text-center inline" src="img/ai.png">
                   </p>
               </div>
               <!-- end robot box --->
